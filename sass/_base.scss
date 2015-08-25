@@ -1,0 +1,15 @@
+*{
+  box-sizing:border-box;
+}
+
+body{
+  color:$white;
+}
+
+#header{
+  background:linear-gradient($bright-blue 50%, $darker-blue 100%);
+}
+
+section{
+  background:$bright-blue;
+}

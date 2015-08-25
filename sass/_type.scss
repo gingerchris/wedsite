@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'Fl';
+  src: url('font/Fl.eot'); /* IE9 Compat Modes */
+  src: url('font/Fl.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/Fl.woff') format('woff'), /* Modern Browsers */
+       url('font/Fl.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('font/Fl.svg#f645b47c14b1fff98cb266f0d3aec969') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  200;
+}
+
+@font-face {
+  font-family: 'Fm';
+  src: url('font/Fm.eot'); /* IE9 Compat Modes */
+  src: url('font/Fm.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/Fm.woff') format('woff'), /* Modern Browsers */
+       url('font/Fm.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('font/Fm.svg#75529023e858c4637d1c4cf773e7b6bc') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  200;
+}
+
+%bold{
+  font-family: "Fm";
+}
+
+body{
+  font-family: "Fl";
+  font-size:18px;
+  line-height:25px;
+}
+
+h1{
+  font-size:28px;
+  line-height:30px;
+  @extend %bold;
+  color:$mustard;
+  margin:20px 0 38px;
+  text-align:center;
+  text-transform:uppercase;
+}
+
+h2{
+  font-size:22px;
+  @extend %bold;
+  margin: 28px 0 8px 0;
+}
+
+p{
+  margin:10px 0;
+}
+
+a{
+  color:$mustard;
+}
+
+nav{
+  text-transform:uppercase;
+}
+
+::-webkit-input-placeholder {
+   font-family:"Fm";
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-family:"Fm";  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-family:"Fm";  
+}
+
+:-ms-input-placeholder {  
+   font-family:"Fm"; 
+}
+
+input{
+  font-family:'Fm';
+}

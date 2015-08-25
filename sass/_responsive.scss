@@ -1,0 +1,49 @@
+.mobile{
+  display:none!important;
+}
+@media (max-width: 800px) {
+  section{
+    min-height:auto;
+    &#header{
+      height:100vh;
+    }
+  }
+  nav{
+    text-align:left;
+    transition:all 1s;
+    overflow:hidden;
+    ul{
+      float:left;
+      clear:both;
+      li{
+        display:block!important;
+        line-height:55px;
+      }
+    }
+    &.show{
+      height:420px;
+      ul{
+        max-height:1000px;
+      }
+    }
+  }
+  .mobile{
+    display:block!important;
+  }
+}
+
+@media (max-width: 600px) {
+ select{
+   margin-top:20px;
+ }
+
+ fieldset span{
+   width:100%;
+   display:block;
+   & + label{
+     input{
+      margin-left:0px;
+     }
+   }
+ }
+}

@@ -1,0 +1,96 @@
+html, body{
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  width:100%;
+}
+
+section{
+  position:relative;
+  width:100%;
+  min-height:100%;
+  padding:80px 0;
+  @extend .clearfix;
+}
+
+nav{
+  position:absolute;
+  z-index:100;
+  bottom:0;
+  width:100%;
+  height:80px;
+  background:$white;
+  text-align:center;
+  
+  &.sticky{
+    position:fixed;
+    top:0;
+    bottom:auto;
+  }
+  
+  ul{
+    list-style-type:none;
+    line-height:80px;
+    li{
+      display:inline-block;
+    }
+  }
+}
+
+#animation{
+  position:absolute;
+  top:0;
+  bottom:20px;
+  left:0;
+  right:0;
+}
+
+#header{
+  padding-top:0;
+  overflow:hidden;
+  img{
+    position:absolute;
+    top:40px;
+    left:50%;
+    transform:translateX(-50%);
+    height:90%;
+  }
+}
+
+#svgs{
+  height:59%;
+  position:absolute;
+  top:40px;
+  width:100%;
+  svg{
+    height:100%;
+    position:absolute;
+    left:50%;
+    top:0;
+    transform:translateX(-50%);
+  }
+}
+
+canvas{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  display:block;
+  z-index:1;
+}
+
+section div{
+  position:relative;
+  z-index:2;
+}
+
+#ceremony-map, #reception-map{
+  height:500px;
+  margin-top:28px;
+}
+
+.gm-style{
+  color:black;
+}

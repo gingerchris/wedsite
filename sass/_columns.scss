@@ -1,0 +1,18 @@
+.col{
+  &--single{
+    width:75%;
+    margin:0 auto;
+  }
+  &--double{
+    width:50%;
+    display:inline-block;
+  }
+  &--map{
+    width:75%;
+    float:left;
+    &-icon{
+      width:20%;
+      float:left;
+    }
+  }
+}

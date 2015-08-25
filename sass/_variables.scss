@@ -1,0 +1,15 @@
+$white : #FFFFFE;
+
+$bright-blue : #4593C4;
+$darker-blue : #0074AF;
+
+$sausage : RGBA(245, 141, 110, 1);
+$mustard : RGBA(250, 203, 0, 1);
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
